@@ -5578,7 +5578,7 @@ static int ipa3_smp2p_probe(struct device *dev)
 		res = enable_irq_wake(ipa3_ctx->smp2p_info.in_base_id +
 			IPA_GPIO_IN_QUERY_CLK_IDX);
 		if (res)
-			IPAERR("failed to enable irq wake\n");
+			IPAERR("failed to enable irq wake %d\n", res);
 	}
 
 	return 0;
